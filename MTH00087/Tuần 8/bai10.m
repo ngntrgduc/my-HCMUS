@@ -1,0 +1,12 @@
+u = linspace(0, 2*pi);
+v = linspace(0, 2*pi);
+[U, V] = meshgrid(u, v);
+x = (1 + 0.5 * cos(V)).*cos(U);
+y = (1 + 0.5 * cos(V)).*sin(U);
+z = 0.5 * sin(V);
+mesh(x, y, z);
+title('Bai 10');
+xlabel('X');
+ylabel('Y');
+zlabel('Z');
+view(45, 65);

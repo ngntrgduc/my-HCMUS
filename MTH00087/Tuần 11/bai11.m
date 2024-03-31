@@ -1,0 +1,13 @@
+syms x;
+f = input('Nhap ham f: ');
+a = input('Nhap can duoi: ');
+b = input('Nhap can tren: ');
+g = Xapxi_tichphan(f, a, b, 2);
+fprintf('Tich phan voi so diem la 2 = %f\n', g);
+g = Xapxi_tichphan(f, a, b, 4);
+fprintf('Tich phan voi so diem la 4 = %f\n', g);
+g = Xapxi_tichphan(f, a, b, 10);
+fprintf('Tich phan voi so diem la 10 = %f\n', g);
+g = Xapxi_tichphan(f, a, b, 20);
+fprintf('Tich phan voi so diem la 20 = %f\n', g);
+fprintf('Tich phan bang ham cua MATLAB = %g\n', double(int(f, a, b)));

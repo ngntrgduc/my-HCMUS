@@ -1,0 +1,12 @@
+u = linspace(0, 2*pi, 200);
+v = linspace(-5, 5, 200);
+[U, V] = meshgrid(u, v);
+x = cos(U);
+y = sin(U);
+z = V;
+mesh(x, y, z);
+title('Bai 9');
+xlabel('X');
+ylabel('Y');
+zlabel('Z');
+axis square;

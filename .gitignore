@@ -1,0 +1,19 @@
+*.exe
+
+*.zip
+
+test*
+!test*.pdf
+
+# MTH10439/Lab/*/*.pdf
+
+# MTH00087/*/*.pdf
+
+image*
+Saved*
+MTH10317/*.pdf
+MTH10317/Lab*/
+MTH10317/Lab00*
+
+.Rhistory
+.RData

@@ -1,0 +1,10 @@
+syms x y;
+y1 = sqrt(x^2 * (x + 3));
+y2 = -sqrt(x^2 * (x + 3));
+ezplot(y1);
+hold on;
+ezplot(y2);
+axis([-5, 5, -5, 5]);
+A = solve(y1 == y2, x);
+S = double(int(y1 - y2, min(A), max(A)));
+fprintf('Dien tich hinh tao boi hinh vong cung la: %f\n', S);
