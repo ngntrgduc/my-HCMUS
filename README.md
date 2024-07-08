@@ -18,7 +18,7 @@
 - [Numerical Linear Algebra (Phương pháp số trong đại số tuyến tính)](/NLA/)
 - [Phân tích xử lý ảnh (Digital Image Processing)](/DIP/)
 - [Số học và thuật toán (Algorithmic Number Theory)](/NT/)
-- [Phân tích thuật toán](/AA/): Big-O, dùng hàm sinh để giải hệ thức truy hồi, nghịch thế
+- [Phân tích thuật toán](/AA/): Code hàng tuần tiết thực hành
 - Nhập môn máy học (Machine learning): [mini projects](https://github.com/ngntrgduc/Fundamental-ML)
 - Khai thác dữ liệu (Data Mining): 
     - Textbook: Data Mining: The Textbook by Charu C. Aggarwal
