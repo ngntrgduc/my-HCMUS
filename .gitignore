@@ -1,19 +1,21 @@
 *.exe
-
 *.zip
+*.docx
+
+bulk_rename.py
 
 test*
 !test*.pdf
 
-# MTH10439/Lab/*/*.pdf
-
-# MTH00087/*/*.pdf
-
 image*
 Saved*
-MTH10317/*.pdf
-MTH10317/Lab*/
-MTH10317/Lab00*
+DIP/*.pdf
+DIP/Lab*/
+DIP/Lab00*
 
 .Rhistory
 .RData
+
+NT/Lab/Lab*/*.pdf
+
+AA/Lab/Lab*/report.pdf

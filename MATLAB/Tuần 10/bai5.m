@@ -1,0 +1,50 @@
+syms x y;
+fprintf('a)');
+figure(1);
+ezplot(y == 2*x^2);
+hold on;
+ezplot(y == 1 + x^2);
+title('Cau a');
+A = solve('2*x^2 = 1 + x^2');
+a = int(abs(int(1, y, 2*x^2, 1 + x^2)), x, double(min(A)), double(max(A)));
+disp(double(a));
+
+fprintf('b)');
+figure(2);
+ezplot(y == 2*x);
+hold on;
+ezplot(y == x^2);
+title('Cau b');
+A = solve('2*x = x^2');
+a = int(abs(int(1, y, 2*x, x^2)), x, double(min(A)), double(max(A)));
+disp(double(a));
+
+fprintf('c)');
+figure(3);
+ezplot(y == x - 1);
+hold on;
+ezplot(y^2 == 2*x + 6);
+title('Cau c');
+A = solve('y + 1 = (y^2 - 6)/2');
+a = int(abs(int(1, x, y + 1, (y^2 - 6)/2)), y, double(min(A)), double(max(A)));
+disp(double(a));
+
+fprintf('d)');
+figure(4);
+ezplot(y == x);
+hold on;
+ezplot(y == x^3);
+title('Cau d');
+A = solve('x = x^3');
+a = int(abs(int(1, y, x, x^3)), x, double(min(A)), double(max(A)));
+disp(double(a));
+
+fprintf('e)');
+figure(5);
+ezplot(y == x - 2);
+hold on;
+ezplot(y^2 == x);
+title('Cau e');
+A = solve('y + 2 = y^2');
+a = int(abs(int(1, x, y + 2, y^2)), y, double(min(A)), double(max(A)));
+disp(double(a));
