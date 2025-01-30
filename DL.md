@@ -1,0 +1,43 @@
+### Máy học nâng cao 
+
+- ML: manual feature engineering; DL: automated feature engineering
+- DL không phải càng "deep" là càng tốt
+- DL không phải là đụng cái gì cũng thử, mà phải coi xem là nó có đáng để thử không?
+- Không chạy GridSearchCV trong DL
+- Normalize cả tập train và tập test sẽ dẫn tới Data leakage
+- Tập validation dùng để: Early stopping, tìm hyperparameters
+    - Nhưng tập test vẫn làm được
+- Phân biệt giữa validation vs test: validation là tập thử để ngăn model không bị overfit theo cách train, trên tập test
+- So sánh models dựa trên:
+    - độ chính xác
+    - số lượng parameters
+    - chi phí tính toán
+- Giới hạn của Fully Connected Layer?
+    - đối với 2D data, cần flatten -> làm mất thông tin
+    - tốn nhiều parameters
+- Batch Normalization sử dụng để tránh exploding gradient và vanishing gradient
+- Khi nào nên dùng Pooling layer thay vì Conv layer? (ưu điểm của Pooling)
+    - Tránh dùng ở gần input do sẽ mất mát thông tin
+    - Không có learnable parameter -> model nhẹ hơn
+    - Nhanh hơn -> mất thông tin
+- Tại sao Max Pooling lại được dùng nhiều?
+    - Do lịch sử 🙂
+- Data >>>>>> model
+- Data sai -> Model sai. Bản chất của model là học thuộc lòng data
+- Model tốt != Model có thể sử dụng được
+- Batch size như nào là tối ưu?
+    - Batch size lớn nhất máy có thể train
+- Tại sao ML không cần batch mà DL lại cần?
+    - Data của ML không quá to, nếu to thì ML chỉ có 1 cái minium
+- Tại sao batch lớn lại tốt hơn batch nhỏ?
+    - Statistics của batch lớn gần với dataset hơn
+- Nhìn vô Loss để điều chỉnh learning rate
+- Optimizer: Adam = Momentum + AdaGrad + RMSProp
+
+Others:
+- Yếu tố quan trọng nhất (?) trong vấn đề nghỉ việc: mối quan hệ với sếp
+- Một số câu hỏi mình note được ~~nhưng mình quên ghi câu trả lời~~:
+    - Số lượng Convolutional layers tối ưu cho CNN?
+    - Tại sao Dropout có thể tránh overfitting?
+    - Model hội tụ thì có dùng được không?
+    - Khi nào dùng loại Pooling nào?
